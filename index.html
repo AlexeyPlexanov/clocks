@@ -2,9 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/main.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+
+    <title>Clocks</title>
   </head>
-  <body></body>
+  <body>
+    <div class="clock">
+      <div class="buttons">
+        <input
+          class="arrowButton"
+          type="button"
+          onclick="handClock()"
+          value="Стрелочные Часы"
+        />
+        <input
+          class="electroButton"
+          type="button"
+          onclick="electronicClock()"
+          value="Электронные Часы"
+        />
+      </div>
+      <div id="arrClock">
+        <div class="hand secondsHand"></div>
+        <div class="hand minutesHand"></div>
+        <div class="hand hoursHand"></div>
+        <div class="center"></div>
+      </div>
+      <div class="electroClock">
+        <span class="hours"></span>
+        <span class="secondsCondition">:</span>
+        <span class="minutes"></span>
+        <span class="secondsCondition">:</span>
+        <span class="seconds"></span>
+      </div>
+      <script src="js/initializing.js"></script>
+    </div>
+  </body>
 </html>
